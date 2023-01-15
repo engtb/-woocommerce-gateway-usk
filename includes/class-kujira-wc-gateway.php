@@ -379,7 +379,7 @@ function kujira_add_checkout_fee_for_gateway() {
 		$is_discount_enabled = $call_kujira_gateway->get_option('is_discount_enabled');
 		$coupon_code = $call_kujira_gateway->get_option('discount_name');
 		
-		if( WC()->cart->has_discount( $coupon_code ) && $chosen_gateway == 'kujira' ) {
+		if( ( WC()->cart->has_discount( $coupon_code ) && $chosen_gateway == 'kujira' ) || $is_discount_enabled == 'no' ) {
 
 		}
 		else {
