@@ -159,7 +159,8 @@ class Kujira_WC_Gateway extends WC_Payment_Gateway
 			'discount_usage_limit' => array(
 				'title' => __('Discount usage limit', 'kujira'),
 				'type' => 'text',
-				'description' => __('Enter the usage limit of discount (Leave blank for unlimited usage)', 'kujira'),
+				'description' => __('Enter the usage limit of discount (Leave blank for unlimited usage per user)', 'kujira'),
+				'default' => __('1', 'kujira'),
 				'desc_tip'      => true,
 			),
 		);
